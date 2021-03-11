@@ -23,7 +23,7 @@ app.use((err, req, res, next) => {
 	res.status(err.status || 500).send(err.message || 'Internal server error.');
 });
 
-const PORT = 7777;
+const PORT = process.env.PORT || 7777;
 
 require('dotenv').config();
 
@@ -49,7 +49,7 @@ const contactEmail = nodemailer.createTransport({
 
 contactEmail.verify((error) => {
   if (error) {
-    (error);
+    console.log(error);
   } else {
     console.log("Ready to Send");
   }
