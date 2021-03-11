@@ -2,7 +2,9 @@ const path = require('path');
 const express = require('express');
 const morgan = require('morgan');
 const { db } = require('./db');
-
+const cors = require("cors");
+const nodemailer = require("nodemailer");
+require('dotenv').config()
 let app = express();
 
 app.use(morgan('dev'));
@@ -21,7 +23,9 @@ app.use((err, req, res, next) => {
 	res.status(err.status || 500).send(err.message || 'Internal server error.');
 });
 
-const PORT = 8000;
+const PORT = 7777;
+
+require('dotenv').config();
 
 const init = async () => {
   await db.sync();
@@ -30,6 +34,45 @@ const init = async () => {
     console.log(`Server is listening on port ${PORT}!`);
   });
 };
+
+
+
+
+const contactEmail = nodemailer.createTransport({
+  host: "smtp.gmail.com",
+  port: 587,
+  auth: {
+    user: "paulmneenantest@gmail.com",
+    pass: process.env.PASS
+  },
+});
+
+contactEmail.verify((error) => {
+  if (error) {
+    (error);
+  } else {
+    console.log("Ready to Send");
+  }
+});
+
+app.post("/contact", (req, res) => {
+  const name = req.body.name;
+  const email = req.body.email;
+  const message = req.body.message; 
+  const mail = {
+    sender: email,
+    to: "paulmneenan@gmail.com",
+    subject: "Contact Form Message",
+    html: `<p>Name: ${name}</p><p>Email: ${email}</p><p>Message: ${message}</p>`,
+  };
+  contactEmail.sendMail(mail, (error) => {
+    if (error) {
+      res.json({ status: "failed" });
+    } else {
+      res.json({ status: "sent" });
+    }
+  });
+});
 
 init();
 
