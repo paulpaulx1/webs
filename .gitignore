@@ -3,5 +3,3 @@ node_modules
 .DS_Store
 secrets.js
 .env
-public/bundle.js
-public/bundle.js.map
