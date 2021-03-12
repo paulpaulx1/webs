@@ -8,7 +8,7 @@ export default () => (
   <>
     <div className='homediv'>
       <img id='cat' src={'./blurrybackground.jpg'}></img>
-      <img className='selfie' src={'./SelfPicForWebsite.jpg'}></img>
+      <img className='selfie' src={'s3://elasticbeanstalk-us-east-1-460972591180/public/blizzrectangle.JPG'}></img>
       <div className='intro'>
         <h2 className='stayathome'>
           CAT FATHER/EX TRADESMAN SEEKING PERMANENT EMPLOYMENT AS FULLSTACK

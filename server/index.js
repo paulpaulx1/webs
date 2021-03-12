@@ -1,12 +1,11 @@
 const path = require('path');
 const express = require('express');
 const morgan = require('morgan');
-// const { db } = require('./db');
-const cors = require("cors");
 const nodemailer = require("nodemailer");
 require('dotenv').config()
 let app = express();
-
+var compression = require('compression')
+app.use(compression())
 app.use(morgan('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
