@@ -2859,7 +2859,7 @@ tomorrow.setDate(tomorrow.getDate() + 1);
     src: './blurrybackground.jpg'
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
     className: "selfie",
-    src: 's3://elasticbeanstalk-us-east-1-460972591180/public/blizzrectangle.JPG'
+    src: "SelfPicforWebsite.jpg"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "intro"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", {
