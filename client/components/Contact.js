@@ -8,7 +8,6 @@ export default () => {
   const [status, setStatus] = useState('Submit');
 
   const handleChange = (e) => {
-    console.log('hi');
     const field = e.target.id;
     field === 'name'
       ? setName(e.target.value)
