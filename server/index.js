@@ -2,6 +2,7 @@ const path = require('path');
 const express = require('express');
 const morgan = require('morgan');
 const nodemailer = require("nodemailer");
+const cors = require('cors')
 require('dotenv').config()
 let app = express();
 var compression = require('compression')
@@ -9,7 +10,7 @@ app.use(compression())
 app.use(morgan('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-
+app.use(cors()); 
 app.use(express.static(path.join(__dirname, '..', 'public')));
 
 app.get('*', function (req, res, next) {
