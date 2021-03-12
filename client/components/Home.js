@@ -8,7 +8,7 @@ export default () => (
   <>
     <div className='homediv'>
       <img id='cat' src={'./blurrybackground.jpg'}></img>
-      <img className='selfie' src={"SelfPicforWebsite.jpg"}></img>
+      <img className='selfie' src={"SelfPicforWebsite.JPG"}></img>
       <div className='intro'>
         <h2 className='stayathome'>
           CAT FATHER/EX TRADESMAN SEEKING PERMANENT EMPLOYMENT AS FULLSTACK
