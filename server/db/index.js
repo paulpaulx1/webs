@@ -1,7 +1,7 @@
 const Sequelize = require("sequelize");
-const db = new Sequelize('postgres://localhost:5432/paulpaul', {
-  logging: false
-});
+// const db = new Sequelize('postgres://localhost:5432/paulpaul', {
+//   logging: false
+// });
 
 module.exports = {
   db

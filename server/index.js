@@ -1,7 +1,7 @@
 const path = require('path');
 const express = require('express');
 const morgan = require('morgan');
-const { db } = require('./db');
+// const { db } = require('./db');
 const cors = require("cors");
 const nodemailer = require("nodemailer");
 require('dotenv').config()
@@ -28,7 +28,7 @@ const PORT = process.env.PORT || 7777;
 require('dotenv').config();
 
 const init = async () => {
-  await db.sync();
+  // await db.sync();
 
   app.listen(PORT, () => {
     console.log(`Server is listening on port ${PORT}!`);
