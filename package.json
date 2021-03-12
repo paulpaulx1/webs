@@ -4,11 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "webpack -w",
+    "build-client": "webpack",
+    "build": "webpack",
     "start-server": "nodemon server -e html,js,scss --ignore public --ignore client",
     "start-dev": "npm run build & npm run start-server",
     "start": "npm run start-dev",
-    "seed": "node seed.js"
+    "seed": "node seed.js",
+    "heroku-postbuild": "echo Skip build on Heroku"
   },
   "keywords": [],
   "author": "",
@@ -42,5 +44,6 @@
     "nodemon": "^2.0.7",
     "webpack": "^5.16.4",
     "webpack-cli": "^4.4.0"
-  }
+  },
+  "heroku-run-build-script": true
 }
