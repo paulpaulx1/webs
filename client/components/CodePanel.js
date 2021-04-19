@@ -3,7 +3,12 @@ import { Link } from 'react-router-dom';
 
 export default (props) => {
   const { url, image, gitUrl, copy, title, stack } = props;
-//   const [img, setImg] = useState(props.image);
+  //   const [img, setImg] = useState(props.image);
+  const mountedStyle = { animation: 'inAnimation 250ms ease-in' };
+  const unmountedStyle = {
+    animation: 'outAnimation 270ms ease-out',
+    animationFillMode: 'forwards',
+  };
   const [showApp, setShowApp] = useState(true);
   return (
     <>
@@ -12,13 +17,7 @@ export default (props) => {
           {' '}
           <div className='codeimagewrapper'>
             {' '}
-            {/* <Link
-              to={{ pathname: url }}
-              target='_blank'
-              style={{ color: 'black' }}
-            > */}
-              <h1>{title}</h1>
-            {/* </Link> */}
+            <h1>{title}</h1>
             <br />
             <Link
               to={{ pathname: gitUrl }}
@@ -28,38 +27,46 @@ export default (props) => {
             <br />
             {copy}
             <br />
-            <br/>
-            <> 
-            <Link
-              to={{ pathname: url }}
-              target='_blank'
-              style={{ color: 'black' }}
-            ><h3>Deployed Link</h3></Link>{' '}<Link to={{ pathname: gitUrl }}
-            target='_blank'
-            style={{ color: 'black' }}><h3>Github</h3></Link></>
+            <br />
+            <>
+              <Link
+                to={{ pathname: url }}
+                target='_blank'
+                style={{ color: 'black' }}
+              >
+                <h3>Deployed Link</h3>
+              </Link>{' '}
+              <Link
+                to={{ pathname: gitUrl }}
+                target='_blank'
+                style={{ color: 'black' }}
+              >
+                <h3>Github</h3>
+              </Link>
+            </>
           </div>
         </div>
         {showApp ? (
-            <div className='aetherSS'>
-          <img
-            className='aetherSS'
-            src={image}
-            onMouseOver={() => {
-              setShowApp(!showApp);
-            }}
-          />
+          <div className='aetherSS' style={showApp ? mountedStyle : unmountedStyle}>
+            <img
+              className='aetherSS'
+              src={image}
+              onMouseOver={() => {
+                setShowApp(!showApp);
+              }}
+            />
           </div>
         ) : (
-            <div    onMouseOut={() => {
+          <div
+            onMouseOut={() => {
               setShowApp(!showApp);
-            }}className='aetherSS'>
-          {/* <Link
-            to={{ pathname: url }}
-            target='_blank'
-         
-          > */}
+
+              
+            }}
+            className='aetherSS'
+            style={!showApp ? mountedStyle : unmountedStyle}
+          >
             {stack}
-          {/* </Link> */}
           </div>
         )}
       </div>

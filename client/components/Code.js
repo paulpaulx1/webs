@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import CodePanel from './CodePanel';
-// import Header from './Header';
 
 export default () => {
   return (
@@ -23,13 +22,20 @@ export default () => {
         stack={paletteStack}
       ></CodePanel>
       <CodePanel
-        image='vitoshats.jpg'
-        gitUrl='https://github.com/Grace-Shopper-Lambda/GraceShopper'
-        url='https://github.com/Grace-Shopper-Lambda/GraceShopper'
-        copy={vitoCopy}
-        title="Crazy Vito's Novelty Hat Emporium"
-        stack={vitoStack}
+        image='plamtsplus.jpg'
+        gitUrl='https://github.com/paulpaulx1/plants'
+        url='http://plantsplus.herokuapp.com'
+        copy={plantCopy}
+        title='Plants Plus'
+        stack={plantStack}
       ></CodePanel>
+      <CodePanel
+        image='hearts.jpg'
+        gitUrl='https://github.com/paulpaulx1/NFT'
+        url='http://nfteetee.herokuapp.com'
+        copy={heartsCopy}
+        stack={aetherStack}
+      />
     </>
   );
 };
@@ -70,28 +76,28 @@ const aetherStack = (
       data-inline='false'
       data-height='36'
     ></span>
-    | Node 
+    | Node
     <span
       className='iconify'
       data-icon='fa-brands:node-js'
       data-inline='false'
       data-height='36'
-    ></span>{' '}<br/>
-    | Express.JS | Firebase{' '}
+    ></span>{' '}
+    <br />| Express.JS | Firebase{' '}
     <span
       className='iconify'
       data-icon='bx:bxl-firebase'
       data-inline='false'
       data-height='36'
     ></span>
-    Three.JS{' '} 
+    Three.JS{' '}
     <span
       className='iconify'
       data-icon='simple-icons:three-dot-js'
       data-inline='false'
       data-height='36'
-    /> <br/>
-    | Socket.IO
+    />{' '}
+    <br />| Socket.IO
     <span
       className='iconify'
       data-icon='cib:socket-io'
@@ -115,21 +121,14 @@ const paletteStack = (
       data-icon='fluent:javascript-16-regular'
       data-inline='false'
       data-height='36'
-    ></span>{' '}<br/>
-    | React{' '}
+    ></span>{' '}
+    <br />| React{' '}
     <span
       className='iconify'
       data-icon='fa-brands:react'
       data-inline='false'
       data-height='36'
     ></span>{' '}
-    {/* | Redux <br />
-    <span
-      className='iconify'
-      data-icon='bx:bxs-file-html'
-      data-inline='false'
-      data-height='36'
-    ></span> */}
     | CSS3{' '}
     <span
       className='iconify'
@@ -137,34 +136,6 @@ const paletteStack = (
       data-inline='false'
       data-height='36'
     ></span>
-  
-    {/* <span
-      className='iconify'
-      data-icon='fa-brands:node-js'
-      data-inline='false'
-      data-height='36'
-    ></span>{' '} */}
-    {/* | Express | Firebase{' '}
-    <span
-      className='iconify'
-      data-icon='bx:bxl-firebase'
-      data-inline='false'
-      data-height='36'
-    ></span><br/>
-    Three.JS{' '}
-    <span
-      className='iconify'
-      data-icon='simple-icons:three-dot-js'
-      data-inline='false'
-      data-height='36'
-    /> <br />
-    | Socket.IO
-    <span
-      className='iconify'
-      data-icon='cib:socket-io'
-      data-inline='false'
-      data-height='36'
-    ></span> */}
     <br /> Tone.JS | Heroku{' '}
     <span
       className='iconify'
@@ -175,7 +146,7 @@ const paletteStack = (
   </div>
 );
 
-const vitoStack = (
+const plantStack = (
   <div className='aetherSS'>
     Javascript
     <span
@@ -212,21 +183,20 @@ const vitoStack = (
       data-inline='false'
       data-height='36'
     ></span>
-    | Node 
+    | Node
     <span
       className='iconify'
       data-icon='fa-brands:node-js'
       data-inline='false'
       data-height='36'
-    ></span>{' '}<br />
-    | Express.JS |{' '}
-    PostgreSQL{' '}
-        <span
-          className='iconify'
-          data-icon='cib:postgresql'
-          data-inline='false'
-          data-height='36'
-        ></span>
+    ></span>{' '}
+    <br />| Express.JS | PostgreSQL{' '}
+    <span
+      className='iconify'
+      data-icon='cib:postgresql'
+      data-inline='false'
+      data-height='36'
+    ></span>
   </div>
 );
 
@@ -237,11 +207,8 @@ const aetherCopy = (
     them into a circle with a spinning hand. Upon intersection the sound is
     triggered. Make beats or make crazy noises. Play with your friends or play
     by yourself. Game powered by Three, multiplayer managed by Sockets/Redux,
-    sound library generated with Tone.js/Web Audio API, beautiful colors and
-    geometry achieved through integrated functional React components and Three
-    Canvas. Firebase authentication and ability to save configurations.
-    reasonable gameplay. This was my "Capstone" at Fullstack Academy and it was
-    very fun to make.
+    sound library generated with Tone.js/Web Audio API. Firebase authentication
+    and ability to save configurations. reasonable gameplay.
   </>
 );
 
@@ -257,14 +224,21 @@ const paletteCopy = (
   </>
 );
 
-const vitoCopy = (
+const plantCopy = (
   <>
-    E-Commerce app developed in an agile team of 3 in 5 days. Admin permissions,
-    Admin dash with CRUD functions, persistant cart, session management, Oauth
-    log in verification, Order History for logged in shoppers, search by
-    name/filter by price, and a questionable-at-best 90's aesthetic. Database
-    schema and functionality is solid but I'll be rebuilding this with
-    Stripe/Gatsby/a slightly less absurd theme as my next project (barring
-    immediate employment-hire me plz).
+    Plants plus. E-Commerce app selling plants. Shopping cart functionality,
+    Admin CRUD dash for users/products, Google O-Auth, Partial Stripe
+    functionality, Material UI Paper Theme. Make over from a group project at
+    Fullstack Academy. In the process of refactoring the spaghetti-code we
+    slapped together in a sprint- view the legacy codebase with this github link
+    or view the in progress code-makeover at
+    https://github.com/paulpaulx1/improved-telegram.
+  </>
+);
+
+const heartsCopy = (
+  <>
+    Interactive Three.js/Tone.js animation and sound piece. Prototype for my
+    first NFT. Influenced by Philip Glass and Yayoi Kusama. Code/art experiment.
   </>
 );

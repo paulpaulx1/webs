@@ -2172,7 +2172,7 @@ var Art = function Art() {
     }));
   })));
 };
-var artArray = ['batteryHarris.jpg', 'firstone2.jpg', 'patagonia.jpg', 'enterprize.jpg', 'optimo.jpg', 'niceeaster.jpg', 'sentinelone.jpg', 'toast.jpg', 'squareBlizz.jpg', 'wavy.jpg', 'themasque.jpg', 'tallfoldy.jpg', 'blizzrectangle.jpg', 'foldpanel.jpg'];
+var artArray = ['batteryHarris.JPG', 'firstone2.JPG', 'patagonia.JPG', 'enterprize.JPG', 'optimo.JPG', 'niceeaster.JPG', 'sentinelone.JPG', 'toast.JPG', 'squareBlizz.JPG', 'wavy.JPG', 'themasque.JPG', 'tallfoldy.JPG', 'blizzrectangle.JPG', 'foldpanel.JPG'];
 
 /***/ }),
 
@@ -2191,7 +2191,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _CodePanel__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./CodePanel */ "./client/components/CodePanel.js");
 
 
- // import Header from './Header';
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (function () {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_CodePanel__WEBPACK_IMPORTED_MODULE_1__.default, {
@@ -2209,12 +2208,18 @@ __webpack_require__.r(__webpack_exports__);
     title: "Palette-Pro-Supreme",
     stack: paletteStack
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_CodePanel__WEBPACK_IMPORTED_MODULE_1__.default, {
-    image: "vitoshats.jpg",
-    gitUrl: "https://github.com/Grace-Shopper-Lambda/GraceShopper",
-    url: "https://github.com/Grace-Shopper-Lambda/GraceShopper",
-    copy: vitoCopy,
-    title: "Crazy Vito's Novelty Hat Emporium",
-    stack: vitoStack
+    image: "plamtsplus.jpg",
+    gitUrl: "https://github.com/paulpaulx1/plants",
+    url: "http://plantsplus.herokuapp.com",
+    copy: plantCopy,
+    title: "Plants Plus",
+    stack: plantStack
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_CodePanel__WEBPACK_IMPORTED_MODULE_1__.default, {
+    image: "hearts.jpg",
+    gitUrl: "https://github.com/paulpaulx1/NFT",
+    url: "http://nfteetee.herokuapp.com",
+    copy: heartsCopy,
+    stack: aetherStack
   }));
 });
 var aetherStack = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
@@ -2259,7 +2264,7 @@ var aetherStack = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(
   "data-icon": "simple-icons:three-dot-js",
   "data-inline": "false",
   "data-height": "36"
-}), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "| Socket.IO", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
+}), ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "| Socket.IO", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
   className: "iconify",
   "data-icon": "cib:socket-io",
   "data-inline": "false",
@@ -2293,7 +2298,7 @@ var paletteStack = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement
   "data-inline": "false",
   "data-height": "36"
 }), ' ');
-var vitoStack = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+var plantStack = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
   className: "aetherSS"
 }, "Javascript", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
   className: "iconify",
@@ -2325,15 +2330,16 @@ var vitoStack = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("d
   "data-icon": "fa-brands:node-js",
   "data-inline": "false",
   "data-height": "36"
-}), ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "| Express.JS |", ' ', "PostgreSQL", ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
+}), ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "| Express.JS | PostgreSQL", ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
   className: "iconify",
   "data-icon": "cib:postgresql",
   "data-inline": "false",
   "data-height": "36"
 }));
-var aetherCopy = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, "Built in 16 days on an agile team of 4. Realtime multiplayer audio/visual synth app. Create shapes that correspond to different instruments and drag them into a circle with a spinning hand. Upon intersection the sound is triggered. Make beats or make crazy noises. Play with your friends or play by yourself. Game powered by Three, multiplayer managed by Sockets/Redux, sound library generated with Tone.js/Web Audio API, beautiful colors and geometry achieved through integrated functional React components and Three Canvas. Firebase authentication and ability to save configurations. reasonable gameplay. This was my \"Capstone\" at Fullstack Academy and it was very fun to make.");
+var aetherCopy = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, "Built in 16 days on an agile team of 4. Realtime multiplayer audio/visual synth app. Create shapes that correspond to different instruments and drag them into a circle with a spinning hand. Upon intersection the sound is triggered. Make beats or make crazy noises. Play with your friends or play by yourself. Game powered by Three, multiplayer managed by Sockets/Redux, sound library generated with Tone.js/Web Audio API. Firebase authentication and ability to save configurations. reasonable gameplay.");
 var paletteCopy = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, "Palette-Pro-Supreme is an audio-visual synth/palette generator developed in a 4 day hackathon (stackathon). It allows you selectively randomize the colors of sets of buttons and save them to local storage. It also alleatoric beep boop bap boop noises (sin waves) generated with the Tone.JS library. Palettes populate as drag and drop columns that trigger random sounds on intersection (this is really cool go to the site and save and drag drop). Exists in a sort of limbo between art, programming, and functionality.");
-var vitoCopy = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, "E-Commerce app developed in an agile team of 3 in 5 days. Admin permissions, Admin dash with CRUD functions, persistant cart, session management, Oauth log in verification, Order History for logged in shoppers, search by name/filter by price, and a questionable-at-best 90's aesthetic. Database schema and functionality is solid but I'll be rebuilding this with Stripe/Gatsby/a slightly less absurd theme as my next project (barring immediate employment-hire me plz).");
+var plantCopy = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, "Plants plus. E-Commerce app selling plants. Shopping cart functionality, Admin CRUD dash for users/products, Google O-Auth, Partial Stripe functionality, Material UI Paper Theme. Make over from a group project at Fullstack Academy. In the process of refactoring the spaghetti-code we slapped together in a sprint- view the legacy codebase with this github link or view the in progress code-makeover at https://github.com/paulpaulx1/improved-telegram.");
+var heartsCopy = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, "Interactive Three.js/Tone.js animation and sound piece. Prototype for my first NFT. Influenced by Philip Glass and Yayoi Kusama. Code/art experiment.");
 
 /***/ }),
 
@@ -2362,6 +2368,14 @@ __webpack_require__.r(__webpack_exports__);
       copy = props.copy,
       title = props.title,
       stack = props.stack; //   const [img, setImg] = useState(props.image);
+
+  var mountedStyle = {
+    animation: 'inAnimation 250ms ease-in'
+  };
+  var unmountedStyle = {
+    animation: 'outAnimation 270ms ease-out',
+    animationFillMode: 'forwards'
+  };
 
   var _useState = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(true),
       _useState2 = _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0___default()(_useState, 2),
@@ -2399,7 +2413,8 @@ __webpack_require__.r(__webpack_exports__);
       color: 'black'
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("h3", null, "Github"))))), showApp ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", {
-    className: "aetherSS"
+    className: "aetherSS",
+    style: showApp ? mountedStyle : unmountedStyle
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("img", {
     className: "aetherSS",
     src: image,
@@ -2457,7 +2472,6 @@ __webpack_require__.r(__webpack_exports__);
       setStatus = _useState8[1];
 
   var handleChange = function handleChange(e) {
-    console.log('hi');
     var field = e.target.id;
     field === 'name' ? setName(e.target.value) : field === 'email' ? setEmail(e.target.value) : field === 'message' ? setMessage(e.target.value) : null;
   };
@@ -2859,7 +2873,7 @@ tomorrow.setDate(tomorrow.getDate() + 1);
     src: './blurrybackground.jpg'
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
     className: "selfie",
-    src: "SelfPicforWebsite.jpg"
+    src: "SelfPicforWebsite.JPG"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "intro"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", {

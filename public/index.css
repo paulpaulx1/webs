@@ -223,6 +223,9 @@ a:hover {
   align-items: center;
   margin: 30px;
 }
+.bio {
+ max-width: 65em;
+}
 
 h2.stayathome {
   font-size: 30px;
@@ -323,23 +326,42 @@ h1.arttitle2 {
   min-height: 30em;
   margin: 40px;
 }
+* {
+  -webkit-animation: fadein .5s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein .5s; /* Firefox < 16 */
+   -ms-animation: fadein .5s; /* Internet Explorer */
+    -o-animation: fadein .5s; /* Opera < 12.1 */
+       animation: fadein .5s;
+}
+.codediv {
+  -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 1s; /* Firefox < 16 */
+   -ms-animation: fadein 1s; /* Internet Explorer */
+    -o-animation: fadein 1s; /* Opera < 12.1 */
+       animation: fadein 1s;
+}
 .aetherSS {
-  /* float: right;
-  position: absolute; */
   color: hotpink;
-  /* max-height: 300px; */
   width: 27em;
-  /* min-height:24em; */
   margin: 5%;
   top: 30%;
   right: 100px;
   border-radius: 10%;
-  transition: all .8s linear;
-  -o-transition: all .8s linear;
-  -moz-transition: all .8s linear;
-  -webkit-transition: all .8s linear;
+  -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 1s; /* Firefox < 16 */
+   -ms-animation: fadein 1s; /* Internet Explorer */
+    -o-animation: fadein 1s; /* Opera < 12.1 */
+       animation: fadein 1s;
 }
-.aetherSS:hover{  transition: all .8s linear;
+
+@keyframes fadein {
+from { opacity: 0; }
+to   { opacity: 1; }
+}
+
+.aetherSS:hover{  
+  animation: 'outAnimation 270ms ease-out';
+  transition: all .8s linear;
   -o-transition: all .8s linear;
   -moz-transition: all .8s linear;
   -webkit-transition: all .8s linear;
