@@ -1,7 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Chrono } from 'react-chrono';
 
 export default () => {
+const [timelineDisplay, setTimelineDisplay] = useState('VERTICAL_ALTERNATING')
+window.addEventListener('resize', ()=>{
+  window.innerWidth < 700 ? 
+  setTimelineDisplay('VERTICAL') : 
+  setTimelineDisplay('VERTICAL_ALTERNATING')
+})
   const items = [
     {
       title: 'Oct 2020 - Feb 2021',
@@ -55,7 +61,7 @@ export default () => {
       cardTitle: 'Euro Custom Woodwork',
       mode: 'VERTICAL',
       cardSubtitle: 'Lead finisher on team of master woodworkers',
-      cardDetailedText: 'Client include Michael Cohen and Deepak Choprah',
+      cardDetailedText: 'Clients included Michael Cohen and Deepak Choprah',
       media: {
         type: 'IMAGE',
         source: {
@@ -92,7 +98,7 @@ export default () => {
       },
     }
   ];
-
+console.log('window',window.innerWidth, timelineDisplay)
   return (
     <div
       style={{
@@ -104,150 +110,10 @@ export default () => {
     >
       <Chrono
         items={items}
-        mode='VERTICAL_ALTERNATING'
+        mode={timelineDisplay}
+        // mode={window.innerWidth > 700 ? 'VERTICAL_ALTERNATING' : 'VERTICAL'}
       />
     </div>
   );
 };
 
-// import React, { Component } from 'react';
-
-// export default () => (
-//   <>
-//   {/* <h1 className='arttitle2'>exp.</h1> */}
-//     <div className='container'>
-//       <div className='main-timeline'>
-//         <div className='timeline'>
-//           <div className='icon'></div>
-//           <div className='date-content'>
-//             <div className='date-outer'>
-//               <span className='date'>
-//                 <span className='month'>Current</span>
-//                 <span className='year'>2020-</span>
-//               </span>
-//             </div>
-//           </div>
-//           <div className='timeline-content'>
-//             <h5 className='title'>Fullstack Javascript Engineer</h5>
-//             <p className='description'>Ready for assignment.</p>
-//           </div>
-//         </div>
-
-//         <div className='timeline'>
-//           <div className='icon'></div>
-//           <div className='date-content'>
-//             <div className='date-outer'>
-//               <span className='date'>
-//                 <span className='month'>6 Months</span>
-//                 <span className='year'>2020-21</span>
-//               </span>
-//             </div>
-//           </div>
-//           <div className='timeline-content'>
-//             <h5 className='title'>Fullstack Academy of Code</h5>
-//             <p className='description'>
-//               Top tier coding bootcamp based in NYC (fully remote). Learned the
-//               NERDS stack (Javascript, Node, Express, Sequelize, React, Redux)
-//               and built fullstack CRUD, E-Commerce, and self directed /
-//               group-project agile applications (click on 'code')
-//             </p>
-//           </div>
-//         </div>
-
-//         <div className='timeline'>
-//           <div className='icon'></div>
-//           <div className='date-content'>
-//             <div className='date-outer'>
-//               <span className='date'>
-//                 <span className='month'>2 Years</span>
-//                 <span className='year'>2016</span>
-//               </span>
-//             </div>
-//           </div>
-//           <div className='timeline-content'>
-//             <h5 className='title'>Web Designer</h5>
-//             <p className='description'>
-//               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-//               efficitur ex sit amet massa scelerisque scelerisque. Aliquam erat
-//               volutpat. Aenean interdum finibus efficitur. Praesent dapibus
-//               dolor felis, eu ultrices elit molestie.
-//             </p>
-//           </div>
-//         </div>
-
-//         <div className='timeline'>
-//           <div className='icon'></div>
-//           <div className='date-content'>
-//             <div className='date-outer'>
-//               <span className='date'>
-//                 <span className='month'>2 Years</span>
-//                 <span className='year'>2018</span>
-//               </span>
-//             </div>
-//           </div>
-//           <div className='timeline-content'>
-//             <h5 className='title'>Graphic Designer</h5>
-//             <p className='description'>
-//               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-//               efficitur ex sit amet massa scelerisque scelerisque. Aliquam erat
-//               volutpat. Aenean interdum finibus efficitur. Praesent dapibus
-//               dolor felis, eu ultrices elit molestie.
-//             </p>
-//           </div>
-//         </div>
-//       </div>
-//     </div>
-//   </>
-// );
-
-// export default () => (
-//     <>Experience
-//     SKILLS:
-
-// PROFICIENT: Javascript, React, Redux, Node, Express, PostrgesSQL, HTML, CSS, Git
-// KNOWLEDGEABLE: Socket.io, Firebase, Heroku Deployment, Oauth, Tone.js
-
-// PROJECTS
-// Aether | Feb-2020
-// https://github.com/capstone-leo/aether | https://aaether.herokuapp.com/
-// ●	Javascript, React, Redux, Node, WebGL, Three.js, Socket.io, Redux, React, Firebase, Tone.js
-// ●	Real time multiplayer audio/visual synthesizer web app. Drag and drop shapes into a circle with a spinning hand. When the hand intersects with shapes they play a sound.
-// ●	Pair programmed through complex Three.js animation and Socket.IO multiplayer functionality. Achieved multiplayer drag/create/update/remove functions for our instruments. Wrote the chat function.
-// ●	Contributed heavily to the aesthetic. Styled landing page and game page. Built switch cases for instrument colors and geometries.
-// ●	Built and implemented arpeggiator function for sound library.
-
-// Palette Pro Supreme | Jan-2020
-//  https://github.com/paulpaulx1/toneBoard2 | https://pallete-pro-supreme.herokuapp.com/
-// ●	Built in 4 day Stackathon with Javascript, React, and Tone.js.
-// ●	Uses selective randomization to develop color palettes and saves them to local storage.
-// ●	Random colors cycle through an array of buttons. Users can toggle opacity, toggle selecting of one set of the buttons to recolor, and print RGB values. Very effective for generating harmonious color palettes for web developers, artists, or anyone interested in color theory.
-// ●	 This app plays sin wave noises generated with Tone.js library.
-
-// JOBS
-// Freelance Woodworker/Colorist/Finisher 				Dec 2018-Present
-// CLIENTS:
-// Dallas Owens LLC, Safwat Riad, Wild Willy’s Woodshop, NY Fine Interiors, Studio Bednark, Utleys
-// Euro Custom Woodwork, Greenpoint, New York                                         	 March-Dec. 2018
-// LEAD MILLWORK FINISHER
-// Finished/fabricated/installed large scale expensive furniture and cabinet work with a team of master woodworkers. Clients include Deepak Chopra and Michael Cohen
-// Pop Chart, Brooklyn, New York
-// WOODSHOP SUPERVISOR/FINISHER						 August 2013 to March 2018
-// ●	Installed, built out and full service woodshop which lasted from 2013-2018 when the company moved production to Indiana. Installed and maintained legal spray-booth, CNC Router, Table Saws, Dust Collection, Compressor, etc…
-// ●	Trained  30+ employees to use machines to make frames to a professional standard of quality control. No serious accidents or injuries
-// ●	Supervised production of approx. $500,000+ of picture frames/various woodworking projects each year
-
-// EDUCATION:
-
-// Fullstack Academy
-// Nov2020 – Feb2021
-// Top-tier 17 week coding bootcamp. Certified.
-
-// Brooklyn College
-// MFA, Sculpture, May 2015
-// Shaw Grant 2014, 2015/Cerf Grant 2015
-
-// Alfred University
-// BFA, Painting, May 2010
-// Senior Painting Award 2010
-// </>
-// )

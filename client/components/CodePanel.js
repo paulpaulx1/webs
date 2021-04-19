@@ -17,7 +17,7 @@ export default (props) => {
           {' '}
           <div className='codeimagewrapper'>
             {' '}
-            <h1>{title}</h1>
+            <h1 id='codetitle'>{title}</h1>
             <br />
             <Link
               to={{ pathname: gitUrl }}
@@ -32,14 +32,14 @@ export default (props) => {
               <Link
                 to={{ pathname: url }}
                 target='_blank'
-                style={{ color: 'black' }}
+                style={{ color: 'hotpink' }}
               >
-                <h3>Deployed Link</h3>
+                <h3>Heroku</h3>
               </Link>{' '}
               <Link
                 to={{ pathname: gitUrl }}
                 target='_blank'
-                style={{ color: 'black' }}
+                style={{ color: 'hotpink' }}
               >
                 <h3>Github</h3>
               </Link>
@@ -47,7 +47,10 @@ export default (props) => {
           </div>
         </div>
         {showApp ? (
-          <div className='aetherSS' style={showApp ? mountedStyle : unmountedStyle}>
+          <div
+            className='aetherSS'
+            style={showApp ? mountedStyle : unmountedStyle}
+          >
             <img
               className='aetherSS'
               src={image}
@@ -60,8 +63,6 @@ export default (props) => {
           <div
             onMouseOut={() => {
               setShowApp(!showApp);
-
-              
             }}
             className='aetherSS'
             style={!showApp ? mountedStyle : unmountedStyle}

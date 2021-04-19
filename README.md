@@ -1,2 +1,2 @@
-
-Personal Website built with React
+PORTFOLIO SITE
+Fully mobile responsive. Raw CSS, Nodemailer and React. 

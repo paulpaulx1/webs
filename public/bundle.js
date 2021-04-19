@@ -2201,13 +2201,6 @@ __webpack_require__.r(__webpack_exports__);
     title: "Aether",
     stack: aetherStack
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_CodePanel__WEBPACK_IMPORTED_MODULE_1__.default, {
-    url: "http://pallete-pro-supreme.herokuapp.com",
-    image: "pal.jpg",
-    gitUrl: "https://github.com/paulpaulx1/toneBoard2",
-    copy: paletteCopy,
-    title: "Palette-Pro-Supreme",
-    stack: paletteStack
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_CodePanel__WEBPACK_IMPORTED_MODULE_1__.default, {
     image: "plamtsplus.jpg",
     gitUrl: "https://github.com/paulpaulx1/plants",
     url: "http://plantsplus.herokuapp.com",
@@ -2215,11 +2208,19 @@ __webpack_require__.r(__webpack_exports__);
     title: "Plants Plus",
     stack: plantStack
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_CodePanel__WEBPACK_IMPORTED_MODULE_1__.default, {
-    image: "hearts.jpg",
+    title: "Untitled / Valentine",
+    image: "heart.jpg",
     gitUrl: "https://github.com/paulpaulx1/NFT",
     url: "http://nfteetee.herokuapp.com",
     copy: heartsCopy,
     stack: aetherStack
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_CodePanel__WEBPACK_IMPORTED_MODULE_1__.default, {
+    url: "http://pallete-pro-supreme.herokuapp.com",
+    image: "paletteSS.jpg",
+    gitUrl: "https://github.com/paulpaulx1/toneBoard2",
+    copy: paletteCopy,
+    title: "Palette-Pro-Supreme",
+    stack: paletteStack
   }));
 });
 var aetherStack = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
@@ -2239,7 +2240,7 @@ var aetherStack = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(
   "data-icon": "bx:bxl-redux",
   "data-inline": "false",
   "data-height": "36"
-}), ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "| HTML5", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
+}), ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "| HTML5", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
   className: "iconify",
   "data-icon": "bx:bxs-file-html",
   "data-inline": "false",
@@ -2336,9 +2337,9 @@ var plantStack = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("
   "data-inline": "false",
   "data-height": "36"
 }));
-var aetherCopy = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, "Built in 16 days on an agile team of 4. Realtime multiplayer audio/visual synth app. Create shapes that correspond to different instruments and drag them into a circle with a spinning hand. Upon intersection the sound is triggered. Make beats or make crazy noises. Play with your friends or play by yourself. Game powered by Three, multiplayer managed by Sockets/Redux, sound library generated with Tone.js/Web Audio API. Firebase authentication and ability to save configurations. reasonable gameplay.");
-var paletteCopy = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, "Palette-Pro-Supreme is an audio-visual synth/palette generator developed in a 4 day hackathon (stackathon). It allows you selectively randomize the colors of sets of buttons and save them to local storage. It also alleatoric beep boop bap boop noises (sin waves) generated with the Tone.JS library. Palettes populate as drag and drop columns that trigger random sounds on intersection (this is really cool go to the site and save and drag drop). Exists in a sort of limbo between art, programming, and functionality.");
-var plantCopy = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, "Plants plus. E-Commerce app selling plants. Shopping cart functionality, Admin CRUD dash for users/products, Google O-Auth, Partial Stripe functionality, Material UI Paper Theme. Make over from a group project at Fullstack Academy. In the process of refactoring the spaghetti-code we slapped together in a sprint- view the legacy codebase with this github link or view the in progress code-makeover at https://github.com/paulpaulx1/improved-telegram.");
+var aetherCopy = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, "Agile team developer. Realtime multiplayer audio/visual synth app. Create shapes that correspond to different instruments and drag them into a circle with a spinning hand. Upon intersection the sound is triggered. Make beats or obnoxious sound art. Play with your friends or play by yourself. Three.JS, Socket.io, Redux, Tone.js/Web audio, Firebase, Javascript, React");
+var paletteCopy = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, "Palette-Pro-Supreme is an audio-visual synth/palette generator developed in a 4 day hackathon (stackathon). It allows you selectively randomize the colors of sets of buttons and save them to local storage. It also makes beep boop bap boop noises generated with the Tone.JS library.");
+var plantCopy = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, "Plants plus. E-Commerce app selling plants. Shopping cart functionality, Admin CRUD dash for users/products, Google O-Auth, Partial Stripe functionality, Material UI Paper Theme. Make over from a group project at Fullstack Academy. Third makeover in progress @ https://github.com/paulpaulx1/improved-telegram.");
 var heartsCopy = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, "Interactive Three.js/Tone.js animation and sound piece. Prototype for my first NFT. Influenced by Philip Glass and Yayoi Kusama. Code/art experiment.");
 
 /***/ }),
@@ -2388,7 +2389,9 @@ __webpack_require__.r(__webpack_exports__);
     className: "codedesc"
   }, ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", {
     className: "codeimagewrapper"
-  }, ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("h1", null, title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
+  }, ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("h1", {
+    id: "codetitle"
+  }, title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
     to: {
       pathname: gitUrl
     },
@@ -2402,15 +2405,15 @@ __webpack_require__.r(__webpack_exports__);
     },
     target: "_blank",
     style: {
-      color: 'black'
+      color: 'hotpink'
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("h3", null, "Deployed Link")), ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("h3", null, "Heroku")), ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
     to: {
       pathname: gitUrl
     },
     target: "_blank",
     style: {
-      color: 'black'
+      color: 'hotpink'
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("h3", null, "Github"))))), showApp ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", {
     className: "aetherSS",
@@ -2425,7 +2428,8 @@ __webpack_require__.r(__webpack_exports__);
     onMouseOut: function onMouseOut() {
       setShowApp(!showApp);
     },
-    className: "aetherSS"
+    className: "aetherSS",
+    style: !showApp ? mountedStyle : unmountedStyle
   }, stack)));
 });
 
@@ -2582,11 +2586,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react_chrono__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-chrono */ "./node_modules/react-chrono/dist/react-chrono.esm.js");
+/* harmony import */ var _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/slicedToArray */ "./node_modules/@babel/runtime/helpers/slicedToArray.js");
+/* harmony import */ var _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react_chrono__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-chrono */ "./node_modules/react-chrono/dist/react-chrono.esm.js");
+
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (function () {
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)('VERTICAL_ALTERNATING'),
+      _useState2 = _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0___default()(_useState, 2),
+      timelineDisplay = _useState2[0],
+      setTimelineDisplay = _useState2[1];
+
+  window.addEventListener('resize', function () {
+    window.innerWidth < 700 ? setTimelineDisplay('VERTICAL') : setTimelineDisplay('VERTICAL_ALTERNATING');
+  });
   var items = [{
     title: 'Oct 2020 - Feb 2021',
     cardTitle: 'Fullstack Academy',
@@ -2627,7 +2642,7 @@ __webpack_require__.r(__webpack_exports__);
     cardTitle: 'Euro Custom Woodwork',
     mode: 'VERTICAL',
     cardSubtitle: 'Lead finisher on team of master woodworkers',
-    cardDetailedText: 'Client include Michael Cohen and Deepak Choprah',
+    cardDetailedText: 'Clients included Michael Cohen and Deepak Choprah',
     media: {
       type: 'IMAGE',
       source: {
@@ -2659,145 +2674,20 @@ __webpack_require__.r(__webpack_exports__);
       }
     }
   }];
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+  console.log('window', window.innerWidth, timelineDisplay);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", {
     style: {
       width: '100%',
       height: '100vh',
       display: 'flex',
       alignItems: 'center'
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_chrono__WEBPACK_IMPORTED_MODULE_1__.Chrono, {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(react_chrono__WEBPACK_IMPORTED_MODULE_2__.Chrono, {
     items: items,
-    mode: "VERTICAL_ALTERNATING"
+    mode: timelineDisplay // mode={window.innerWidth > 700 ? 'VERTICAL_ALTERNATING' : 'VERTICAL'}
+
   }));
-}); // import React, { Component } from 'react';
-// export default () => (
-//   <>
-//   {/* <h1 className='arttitle2'>exp.</h1> */}
-//     <div className='container'>
-//       <div className='main-timeline'>
-//         <div className='timeline'>
-//           <div className='icon'></div>
-//           <div className='date-content'>
-//             <div className='date-outer'>
-//               <span className='date'>
-//                 <span className='month'>Current</span>
-//                 <span className='year'>2020-</span>
-//               </span>
-//             </div>
-//           </div>
-//           <div className='timeline-content'>
-//             <h5 className='title'>Fullstack Javascript Engineer</h5>
-//             <p className='description'>Ready for assignment.</p>
-//           </div>
-//         </div>
-//         <div className='timeline'>
-//           <div className='icon'></div>
-//           <div className='date-content'>
-//             <div className='date-outer'>
-//               <span className='date'>
-//                 <span className='month'>6 Months</span>
-//                 <span className='year'>2020-21</span>
-//               </span>
-//             </div>
-//           </div>
-//           <div className='timeline-content'>
-//             <h5 className='title'>Fullstack Academy of Code</h5>
-//             <p className='description'>
-//               Top tier coding bootcamp based in NYC (fully remote). Learned the
-//               NERDS stack (Javascript, Node, Express, Sequelize, React, Redux)
-//               and built fullstack CRUD, E-Commerce, and self directed /
-//               group-project agile applications (click on 'code')
-//             </p>
-//           </div>
-//         </div>
-//         <div className='timeline'>
-//           <div className='icon'></div>
-//           <div className='date-content'>
-//             <div className='date-outer'>
-//               <span className='date'>
-//                 <span className='month'>2 Years</span>
-//                 <span className='year'>2016</span>
-//               </span>
-//             </div>
-//           </div>
-//           <div className='timeline-content'>
-//             <h5 className='title'>Web Designer</h5>
-//             <p className='description'>
-//               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-//               efficitur ex sit amet massa scelerisque scelerisque. Aliquam erat
-//               volutpat. Aenean interdum finibus efficitur. Praesent dapibus
-//               dolor felis, eu ultrices elit molestie.
-//             </p>
-//           </div>
-//         </div>
-//         <div className='timeline'>
-//           <div className='icon'></div>
-//           <div className='date-content'>
-//             <div className='date-outer'>
-//               <span className='date'>
-//                 <span className='month'>2 Years</span>
-//                 <span className='year'>2018</span>
-//               </span>
-//             </div>
-//           </div>
-//           <div className='timeline-content'>
-//             <h5 className='title'>Graphic Designer</h5>
-//             <p className='description'>
-//               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-//               efficitur ex sit amet massa scelerisque scelerisque. Aliquam erat
-//               volutpat. Aenean interdum finibus efficitur. Praesent dapibus
-//               dolor felis, eu ultrices elit molestie.
-//             </p>
-//           </div>
-//         </div>
-//       </div>
-//     </div>
-//   </>
-// );
-// export default () => (
-//     <>Experience
-//     SKILLS:
-// PROFICIENT: Javascript, React, Redux, Node, Express, PostrgesSQL, HTML, CSS, Git
-// KNOWLEDGEABLE: Socket.io, Firebase, Heroku Deployment, Oauth, Tone.js
-// PROJECTS
-// Aether | Feb-2020
-// https://github.com/capstone-leo/aether | https://aaether.herokuapp.com/
-// ●	Javascript, React, Redux, Node, WebGL, Three.js, Socket.io, Redux, React, Firebase, Tone.js
-// ●	Real time multiplayer audio/visual synthesizer web app. Drag and drop shapes into a circle with a spinning hand. When the hand intersects with shapes they play a sound.
-// ●	Pair programmed through complex Three.js animation and Socket.IO multiplayer functionality. Achieved multiplayer drag/create/update/remove functions for our instruments. Wrote the chat function.
-// ●	Contributed heavily to the aesthetic. Styled landing page and game page. Built switch cases for instrument colors and geometries.
-// ●	Built and implemented arpeggiator function for sound library.
-// Palette Pro Supreme | Jan-2020
-//  https://github.com/paulpaulx1/toneBoard2 | https://pallete-pro-supreme.herokuapp.com/
-// ●	Built in 4 day Stackathon with Javascript, React, and Tone.js.
-// ●	Uses selective randomization to develop color palettes and saves them to local storage.
-// ●	Random colors cycle through an array of buttons. Users can toggle opacity, toggle selecting of one set of the buttons to recolor, and print RGB values. Very effective for generating harmonious color palettes for web developers, artists, or anyone interested in color theory.
-// ●	 This app plays sin wave noises generated with Tone.js library.
-// JOBS
-// Freelance Woodworker/Colorist/Finisher 				Dec 2018-Present
-// CLIENTS:
-// Dallas Owens LLC, Safwat Riad, Wild Willy’s Woodshop, NY Fine Interiors, Studio Bednark, Utleys
-// Euro Custom Woodwork, Greenpoint, New York                                         	 March-Dec. 2018
-// LEAD MILLWORK FINISHER
-// Finished/fabricated/installed large scale expensive furniture and cabinet work with a team of master woodworkers. Clients include Deepak Chopra and Michael Cohen
-// Pop Chart, Brooklyn, New York
-// WOODSHOP SUPERVISOR/FINISHER						 August 2013 to March 2018
-// ●	Installed, built out and full service woodshop which lasted from 2013-2018 when the company moved production to Indiana. Installed and maintained legal spray-booth, CNC Router, Table Saws, Dust Collection, Compressor, etc…
-// ●	Trained  30+ employees to use machines to make frames to a professional standard of quality control. No serious accidents or injuries
-// ●	Supervised production of approx. $500,000+ of picture frames/various woodworking projects each year
-// EDUCATION:
-// Fullstack Academy
-// Nov2020 – Feb2021
-// Top-tier 17 week coding bootcamp. Certified.
-// Brooklyn College
-// MFA, Sculpture, May 2015
-// Shaw Grant 2014, 2015/Cerf Grant 2015
-// Alfred University
-// BFA, Painting, May 2010
-// Senior Painting Award 2010
-// </>
-// )
+});
 
 /***/ }),
 
