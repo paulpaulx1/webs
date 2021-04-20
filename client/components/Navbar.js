@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom'
 export default () => {
  const [linksVisible, setLinksVisible] = useState(false)
   return <div className="navbar">
-    <Link to={"/"}onClick={() => {window.location.href="/"}}  id="headername"><h1 className="headertext">paulmneenan | PROGRAMMER | ARTIST</h1></Link>
+    <Link to={"/"}onClick={() => {window.location.href="/"}}  id="headername"><h1 className="headertext">paulmneenan | SOFTWARE ENGINEER</h1></Link>
     <nav>
       {linksVisible &&
         <ul className="navbarlinks"> 

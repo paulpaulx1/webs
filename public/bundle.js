@@ -2867,7 +2867,7 @@ __webpack_require__.r(__webpack_exports__);
     id: "headername"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("h1", {
     className: "headertext"
-  }, "paulmneenan | PROGRAMMER | ARTIST")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("nav", null, linksVisible && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("ul", {
+  }, "paulmneenan | SOFTWARE ENGINEER")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("nav", null, linksVisible && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("ul", {
     className: "navbarlinks"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("li", null, " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
     onClick: function onClick() {
