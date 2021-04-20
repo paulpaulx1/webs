@@ -310,16 +310,19 @@ h1.arttitle2 {
 }
 
 .codediv {
+  background:rgba(247, 247, 247, 0.63);
   display: flex;
   flex-wrap: wrap;
   width: 100%;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
+
   border-bottom: 2px solid rgb(184, 179, 179);
 }
 .codedesc {
-  max-width: 34em;
-  margin: 40px;
+  max-width: 37em;
+  margin: 30px;
+  margin-bottom: 5px;
 }
 * {
   -webkit-animation: fadein .5s; /* Safari, Chrome and Opera > 12.1 */
@@ -332,8 +335,10 @@ h1.arttitle2 {
 .aetherSS {
   color: hotpink;
   width: 27em;
-  margin: 5%;
+  margin: 3%;
+  margin-left: 1%;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   /* justify-content: center; */
   min-height: 288px;
