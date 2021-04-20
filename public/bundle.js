@@ -2828,7 +2828,7 @@ tomorrow.setDate(tomorrow.getDate() + 1);
     className: "biowrapper"
   }, ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
     className: "bio"
-  }, "The previous year has afforded a generation of permanently furloughed, disaffected and underemployed workers the time and energy to \u201Clearn how to code.\u201D Lured by the prospect of six-figure entry level salaries, unlimited snacks, and Teva-friendly work environments, these misled youths have matriculated into software engineering \u201Cbootcamps.\u201D I myself am one of these youths (mid-thirties). I put on my coding hat six months ago and began teaching myself some HTML. The bootcamp is over and I have been released into the wild. My previous strategy of \u201Ckeeping my hopes up\u201D will only take me so far. Zuckerberg hasn\u2019t called yet. Not even the Winkelvos have reached out on LinkedIn. Luckily, I have until tomorrow, ", tomorrow.toString(), " secure myself a job.")), ' ');
+  }, "Luckily, I have until tomorrow, ", tomorrow.toString(), " secure myself a job.")), ' ');
 });
 
 /***/ }),

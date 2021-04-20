@@ -107,16 +107,7 @@ export default () => (
     <div className='biowrapper'>
       {' '}
       <p className='bio'>
-        The previous year has afforded a generation of permanently furloughed,
-        disaffected and underemployed workers the time and energy to “learn how
-        to code.” Lured by the prospect of six-figure entry level salaries,
-        unlimited snacks, and Teva-friendly work environments, these misled
-        youths have matriculated into software engineering “bootcamps.” I myself
-        am one of these youths (mid-thirties). I put on my coding hat six months
-        ago and began teaching myself some HTML. The bootcamp is over and I have
-        been released into the wild. My previous strategy of “keeping my hopes
-        up” will only take me so far. Zuckerberg hasn’t called yet. Not even the
-        Winkelvos have reached out on LinkedIn. Luckily, I have until
+         Luckily, I have until
       tomorrow, {tomorrow.toString()} secure myself a job.</p>
     </div>{' '}
   </>
