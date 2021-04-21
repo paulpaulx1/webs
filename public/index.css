@@ -126,7 +126,7 @@ li:hover {
 }
 
 a {
-  color: rgb(250, 248, 249);
+  color: rgba(247, 247, 247, 0.97);
   font-weight: 800;
   transition: all 0.2s ease-in-out;
 }
@@ -268,7 +268,7 @@ h1.arttitle1 {
   animation: 1s ease-out 0s 1 slideInRight;
   background-color: rgb(30, 30, 31);
   font-size: 18vw;
-  color: white;
+  color: rgba(247, 247, 247, 0.63);
   margin: 4px;
   text-align: center;
   transition: all 0.4s ease-in-out;
@@ -277,7 +277,7 @@ h1.arttitle2 {
   animation: 1s ease-out 0s 1 slideInLeft;
   background-color: rgb(30, 30, 31);
   font-size: 18vw;
-  color: white;
+  color: rgba(247, 247, 247, 0.63);;
   margin: 4px;
   text-align: center;
   transition: all 0.4s ease-in-out;
