@@ -23,7 +23,7 @@ export default () => {
     setStatus('Sending');
     axios({
       method: 'POST',
-      url: 'http://localhost:7777/contact',
+      url: 'http://paulneenan.herokuapp.com/contact',
       data: { name, email, message, status },
     }).then((response) => {
       if (response.data.status === 'sent') {
